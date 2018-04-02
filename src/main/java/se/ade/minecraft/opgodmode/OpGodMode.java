@@ -1,4 +1,4 @@
-package se.ade.minecraft.adeplugin;
+package se.ade.minecraft.opgodmode;
 
 import org.bukkit.attribute.Attribute;
 import org.bukkit.command.Command;
