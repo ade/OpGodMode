@@ -37,7 +37,7 @@ public class OpGodMode extends JavaPlugin implements CommandExecutor, Listener {
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = false)
     public void onDamage(EntityDamageEvent e) {
         if (enabled && e.getEntity() instanceof Player) {
-            Player player = (Player)e;
+            Player player = (Player)e.getEntity();
             if(player.isOp()) {
                 e.setCancelled(true);
                 player.setHealth(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getDefaultValue());

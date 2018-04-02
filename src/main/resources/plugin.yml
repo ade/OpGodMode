@@ -1,3 +1,7 @@
 name: OpGodMode
 main: se.ade.minecraft.opgodmode.OpGodMode
 version: 1
+commands:
+   god:
+      description: Enable or disable god mode
+      usage: /god
