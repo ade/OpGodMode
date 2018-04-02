@@ -1,5 +1,6 @@
 package se.ade.minecraft.opgodmode;
 
+import org.bukkit.ChatColor;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -30,7 +31,7 @@ public class OpGodMode extends JavaPlugin implements CommandExecutor, Listener {
         }
 
         enabled = !enabled;
-        s.sendMessage("§6God mode §c" + (enabled ? "enabled" : "disabled") + "§6.");
+        s.sendMessage(ChatColor.WHITE + "God mode " + (enabled ? ChatColor.GREEN + "enabled" : ChatColor.RED + "disabled") + ChatColor.WHITE + ".");
         return true;
     }
 
